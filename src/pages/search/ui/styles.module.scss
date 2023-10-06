@@ -2,29 +2,19 @@
 
     position: relative;
     display: grid;
+    grid-template-rows: auto auto;
     margin: 0 auto;
-    min-height: 100vh;
     max-width: 1440px;
 
     &__header {
-        position: fixed;
+        position: sticky;
+        top: 0;
+        z-index: 1;
         background: #F8F8F8;
-        left: 50%;
-        transform: translate(-50%, 0);
-        width: 100%;
     }
 
     &__searchWidget {
-        // margin: auto 0;
-        // background: red;
-        // padding: 32px;
-        animation: showSearch 1s ease;
-        height: 100vh;
-        &_active {
-            animation: hideSearch 1s ease;
-            height: 20rem;
-            margin-top: 9rem;
-        }
+        background: #F8F8F8;
     }
 
     &__errorAlert {
@@ -74,28 +64,5 @@
     100% {
         display: none;
         transform: translateY(200vh);
-    }
-}
-
-
-@keyframes showSearch {
-    0% {
-        height: 20rem;
-    }
-    
-    100% {
-        height: 100vh;
-    }
-}
-
-@keyframes hideSearch {
-    0% {
-        height: 100vh;
-        margin-top: 0;
-    }
-    
-    100% {
-        height: 20rem;
-        margin-top: 9rem;
     }
 }

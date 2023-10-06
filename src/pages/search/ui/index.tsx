@@ -9,7 +9,7 @@ export const SearchPage = () => {
     return (
         <div className={styles.searchPage}>
             <Header classname={styles.searchPage__header}/>
-            <SearchWidget classname={state.isFirstOpen ? styles.searchPage__searchWidget : styles.searchPage__searchWidget_active}/>
+            <SearchWidget classname={styles.searchPage__searchWidget}/>
             <SearchResultsWidget classname={state.isFirstOpen ? styles.searchPage__searchResultsWidget : styles.searchPage__searchResultsWidget_active}/>
             {state.isLoading ? (
                 <CircularProgress className={styles.searchPage__loadingProgress}/>

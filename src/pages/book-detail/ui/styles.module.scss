@@ -5,15 +5,14 @@
     max-width: 1440px;
 
     &__header {
-        position: fixed;
+        position: sticky;
+        top: 0;
+        z-index: 1;
         background: #F8F8F8;
-        left: 50%;
-        transform: translate(-50%, 0);
-        width: 100%;
     }
 
     &__btnNavBack {
-        margin: 10rem 2rem 1rem 2rem;
+        margin: 1rem 2rem 1rem 2rem;
         width: fit-content;
         font-weight: bold;
     }
